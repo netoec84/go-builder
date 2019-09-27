@@ -15,4 +15,4 @@ RUN apk update && \
 ENV GO111MODULE=on
 
 WORKDIR /src
-COPY --from=consulbuilder /src/envconsul 
+COPY --from=consulbuilder /src/envconsul .
