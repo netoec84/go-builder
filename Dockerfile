@@ -5,7 +5,7 @@ RUN apk add --no-cache curl && \
     unzip envconsul_0.8.0_linux_amd64.zip && \
     rm envconsul_0.8.0_linux_amd64.zip
 
-FROM golang:1.12.9-alpine3.10 as builder
+FROM golang:1.15.5-alpine as builder
 RUN apk update && \
   apk add git && \
   apk add gcc && \
